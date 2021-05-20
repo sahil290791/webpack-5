@@ -2,6 +2,14 @@ import './hello-world-button.scss';
 
 class HelloButton {
   buttonCssClass = 'hello-world-button';
+  static instance;
+
+  static getInstance() {
+    if (!this.instance) {
+      this.instance = new HelloButton();
+    }
+    return this.instance;
+  }
 
   render() {
       const button = document.createElement('button');
