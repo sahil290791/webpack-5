@@ -55,11 +55,10 @@ module.exports = {
         template: path.join('public', 'index.html'),
       }),
       new ModuleFederationPlugin({
-        name: 'HelloWorldApp',
+        name: 'HelloWorld1App',
         filename: 'remoteEntry.js',
         exposes: {
-          './HelloWorldButton': path.join(__dirname, 'src', 'components/hello_world_button/HelloButton.js'),
-          './HelloWorldPage': path.join(__dirname, 'src', 'components', 'hello-world-page.js')
+          './HelloWorldPage1': path.join(__dirname, 'src', 'components', 'hello-world-page.js')
         }
       })
     ],

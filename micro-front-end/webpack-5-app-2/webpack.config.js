@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.join(__dirname, 'dist'),
-        publicPath: 'http://localhost:3001'
+        publicPath: 'http://localhost:3001/'
     },
     module: {
       rules: [
@@ -58,7 +58,7 @@ module.exports = {
         name: 'HelloWorld2App',
         filename: 'remoteEntry.js',
         exposes: {
-          './HelloWorldApp2': path.join(__dirname, 'src', 'components', 'app-2.page.js')
+          './HelloWorldPage2': path.join(__dirname, 'src', 'components', 'app-2.page.js')
         }
       })
     ],

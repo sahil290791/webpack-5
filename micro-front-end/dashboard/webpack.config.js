@@ -30,8 +30,8 @@ module.exports = {
       new ModuleFederationPlugin({
         name: 'ContainerApp',
         remotes: {
-          'HelloWorldPage1': 'HelloWorldPageApp1@http://localhost:3000/remoteEntry.js',
-          'HelloWorldPage2': 'HelloWorldApp2@http://localhost:3001/remoteEntry.js'
+          'HelloWorld1App': 'HelloWorld1App@http://localhost:3000/remoteEntry.js',
+          'HelloWorld2App': 'HelloWorld2App@http://localhost:3001/remoteEntry.js'
         }
       })
     ],
